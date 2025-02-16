@@ -12,11 +12,11 @@
 /coverage
 
 # next.js
-/.next/
-/out/
+*/.next/
+*/out/
 
 # production
-/build
+*/build/
 
 # misc
 .DS_Store
@@ -41,7 +41,6 @@ next-env.d.ts
 
 HELP.md
 .gradle
-build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
@@ -59,7 +58,7 @@ bin/
 !**/src/test/**/bin/
 
 ### IntelliJ IDEA ###
-.idea
+*/.idea
 *.iws
 *.iml
 *.ipr
@@ -68,11 +67,11 @@ out/
 !**/src/test/**/out/
 
 ### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
+*/nbproject/private/
+*/nbbuild/
+*/dist/
+*/nbdist/
+*/.nb-gradle/
 
 ### VS Code ###
 .vscode/
