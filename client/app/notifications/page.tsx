@@ -42,7 +42,7 @@ const Notifications = () => {
       <div className="flex-1 p-8">
         <h1 className="text-2xl font-bold">Notifications</h1>
 
-        <div className="bg-gray-300 p-4 mt-4 rounded-lg">
+        <div className="bg-gray-300 p-4 mt-4 rounded-lg h-[400px] overflow-y-auto"> {/* Set height and enable scrolling */}
           {notifications.length > 0 ? (
             notifications.map((notif) => (
               <div key={notif.id} className="flex items-center justify-between bg-white p-3 my-2 rounded-md shadow-sm transition-all duration-300">
