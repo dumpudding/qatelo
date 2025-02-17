@@ -1,0 +1,60 @@
+import React, { useState } from "react";
+
+const Profile = () => {
+  const [notifications, setNotifications] = useState(false);
+
+  return (
+    <div className="w-full max-w-lg mx-auto bg-white shadow-lg rounded-lg overflow-hidden border border-gray-300">
+      {/* Header */}
+      <div className="bg-yellow-300 p-4 flex items-center justify-between">
+        <h1 className="text-2xl font-serif text-gray-800">qatelo <span className="text-sm font-light">profile</span></h1>
+      </div>
+      
+      {/* Profile Content */}
+      <div className="flex p-6">
+        {/* Profile Image */}
+        <div className="w-20 h-20 rounded-full overflow-hidden border-4 border-white shadow-lg">
+          <img src="/profile.jpg" alt="Profile" className="w-full h-full object-cover" />
+        </div>
+        
+        {/* Information */}
+        <div className="ml-4 w-full">
+          <div className="mb-2">
+            <label className="font-semibold">Name:</label>
+            <div className="bg-green-800 text-white rounded-md p-2">Anna Ryerson</div>
+          </div>
+          <div className="mb-2">
+            <label className="font-semibold">Phone number:</label>
+            <div className="bg-green-800 text-white rounded-md p-2">780-xxx-xxx</div>
+          </div>
+          <div className="mb-2">
+            <label className="font-semibold">Bio:</label>
+            <div className="bg-green-800 text-white rounded-md p-2">...</div>
+          </div>
+          <div className="mb-2">
+            <label className="font-semibold">Address:</label>
+            <div className="bg-green-800 text-white rounded-md p-2">...</div>
+          </div>
+          <div className="flex items-center">
+            <label className="font-semibold mr-2">Notifications:</label>
+            <div
+              className={`w-10 h-5 flex items-center bg-gray-300 rounded-full p-1 cursor-pointer transition ${notifications ? "bg-yellow-400" : "bg-gray-300"}`}
+              onClick={() => setNotifications(!notifications)}
+            >
+              <div
+                className={`bg-green-800 w-4 h-4 rounded-full shadow-md transform transition ${notifications ? "translate-x-5" : "translate-x-0"}`}
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      {/* Bottom Right Icon */}
+      <div className="p-4 flex justify-end">
+        <img src="/icon.png" alt="Icon" className="w-10 h-10" />
+      </div>
+    </div>
+  );
+};
+
+export default Profile;
