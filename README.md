@@ -7,7 +7,7 @@ This project is divided into two main sections, frontend (client) and backend (s
 
 # Acknowledgements
 - [dumpudding](https://github.com/dumpudding)
-- [ome](https://github.com/)
+- [ome](https://github.com/ome-d)
 - [p3sto](https://github.com/p3sto)
 
 # License
