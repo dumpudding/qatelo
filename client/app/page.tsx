@@ -57,10 +57,6 @@ export default function Home() {
                     Login
                 </button>
 
-                {/* Learn More Link */}
-                <p className="mt-4 text-sm text-gray-700">
-                    <a href="#" className="underline">Learn more</a>
-                </p>
             </div>
         </main>
     );
