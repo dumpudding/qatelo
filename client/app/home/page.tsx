@@ -70,6 +70,16 @@ const Home = () => {
             <p className="text-center text-gray-600 mt-2">No notifications.</p>
           )}
         </div>
+
+        {/* Forum and Chat Button */}
+        <div className="absolute right-4 bottom-10 flex flex-col items-center">
+          <button className="bg-green-700 text-yellow-300 px-4 py-2 rounded-md text-sm mb-2">
+            Forum
+          </button>
+          <button className="bg-green-700 text-yellow-300 px-4 py-2 rounded-md text-sm">
+            Chat
+          </button>
+        </div>
       </div>
     </div>
   );
