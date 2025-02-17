@@ -1,9 +1,10 @@
+"use client";
+
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
 const Home = () => {
-  // Get notifications from localStorage (sync with Notifications page)
   const [notifications, setNotifications] = useState<{ id: number; sender: string; message: string }[]>([]);
 
   useEffect(() => {
@@ -31,7 +32,7 @@ const Home = () => {
 
           {/* Profile Picture */}
           <Image
-            src="/design_folder/profile.png" // Placeholder
+            src="/design_folder/profile.png"
             alt="Profile"
             width={40}
             height={40}
@@ -74,3 +75,4 @@ const Home = () => {
 };
 
 export default Home;
+    
